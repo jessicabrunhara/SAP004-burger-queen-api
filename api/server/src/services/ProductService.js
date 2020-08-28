@@ -8,6 +8,7 @@ class ProductService {
       throw error
     }
   }
+
   static async addProduct(newProduct) {
     try {
       return await database.Product.create(newProduct)
@@ -15,6 +16,7 @@ class ProductService {
       throw error
     }
   }
+
   static async updateProduct(id, updateProduct) {
     try {
       const ProductToUpdate = await database.Product.findOne({
