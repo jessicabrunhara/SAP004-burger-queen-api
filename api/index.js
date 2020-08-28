@@ -14,7 +14,7 @@ app.use('/products', productRoutes);
 app.use('/order', orderRoutes);
 
 app.get('*', (req, res) => res.status(200).send({
-    message: 'Hello World!'
+    message: 'Esta é a API de Burger Queen'
 }))
 
 app.listen(port, () => {
