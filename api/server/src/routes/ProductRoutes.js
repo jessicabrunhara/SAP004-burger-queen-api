@@ -3,9 +3,9 @@ import ProductController from '../controllers/ProductController'
 
 const router = Router()
 router.get('/', ProductController.getAllProducts)
-router.post('/', ProductController.getAllProducts)
-router.get('/:id', ProductController.getAllProducts)
-router.put('/:id', ProductController.getAllProducts)
-router.delete('/:id', ProductController.getAllProducts)
+router.post('/', ProductController.addProduct)
+router.get('/:id', ProductController.getProduct)
+router.put('/:id', ProductController.updateProduct)
+router.delete('/:id', ProductController.deleteProduct)
 
 export default router
